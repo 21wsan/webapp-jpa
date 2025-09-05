@@ -13,6 +13,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @Repository
+@RepositoryJdbc
 public class ProductoRepositoryJdbcImpl implements CrudRepository<Producto> {
 
     @Inject

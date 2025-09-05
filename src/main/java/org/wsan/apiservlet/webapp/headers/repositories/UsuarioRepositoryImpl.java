@@ -3,6 +3,7 @@ package org.wsan.apiservlet.webapp.headers.repositories;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.wsan.apiservlet.webapp.headers.configs.MysqlConn;
+import org.wsan.apiservlet.webapp.headers.configs.Repository;
 import org.wsan.apiservlet.webapp.headers.models.entities.Usuario;
 
 import java.sql.Connection;
@@ -11,6 +12,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+@Repository
+@RepositoryJdbc
 @ApplicationScoped
 public class UsuarioRepositoryImpl implements UsuarioRepository{
 

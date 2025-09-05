@@ -7,7 +7,8 @@ import java.time.LocalDate;
 @Entity
 @Table(name="productos")
 public class Producto {
-    @id
+
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nombre;

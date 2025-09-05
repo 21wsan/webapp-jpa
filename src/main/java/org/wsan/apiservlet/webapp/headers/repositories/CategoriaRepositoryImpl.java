@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
+@RepositoryJdbc
 public class CategoriaRepositoryImpl implements CrudRepository<Categoria> {
 
     private Connection conn;
