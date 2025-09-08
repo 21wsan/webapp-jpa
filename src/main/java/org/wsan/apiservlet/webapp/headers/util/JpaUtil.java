@@ -6,13 +6,13 @@ import jakarta.persistence.Persistence;
 
 public class JpaUtil {
 
-    private static final EntityManagerFactory entitiManagerFactory = buidEntityManagerFactory();
+    private static final EntityManagerFactory entityManagerFactory = buidEntityManagerFactory();
 
     private static EntityManagerFactory buidEntityManagerFactory() {
         return Persistence.createEntityManagerFactory("ejemploJpa");
     }
 
     public static EntityManager getEntityManager(){
-        return entitiManagerFactory.createEntityManager();
+        return entityManagerFactory.createEntityManager();
     }
 }
