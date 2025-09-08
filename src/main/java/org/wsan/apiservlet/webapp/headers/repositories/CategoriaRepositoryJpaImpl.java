@@ -16,7 +16,7 @@ public class CategoriaRepositoryJpaImpl implements CrudRepository<Categoria>{
 
     @Override
     public List<Categoria> listar() throws Exception {
-        return em.createQuery("from categoria", Categoria.class).getResultList();
+        return em.createQuery("from Categoria", Categoria.class).getResultList();
     }
 
     @Override

@@ -53,7 +53,7 @@ public class UsuarioRepositoryImpl implements UsuarioRepository{
                     usuario.setId(rs.getLong("id"));
                     usuario.setUsername(rs.getString("username"));
                     usuario.setPassword(rs.getString("password"));
-                    usuario.setEmail(rs.getString("password"));
+                    usuario.setEmail(rs.getString("email"));
                 }
             }
         }
